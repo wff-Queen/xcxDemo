@@ -1,0 +1,143 @@
+/**app.wxss**/
+
+page {
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+}
+
+text,
+view,
+image {
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 200rpx 0;
+    box-sizing: border-box;
+}
+
+
+/*弹性布局*/
+
+.row .col {
+    height: 80px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.row .col {
+    flex: 1;
+}
+
+.row-warp {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row .col-12 {
+    flex: 0 0 100%
+}
+
+.row .col-6 {
+    flex: 0 0 50%
+}
+
+.row .col-4 {
+    flex: 0 0 33.3333%
+}
+
+.row .col-3 {
+    flex: 0 0 25%
+}
+
+
+/*箭头封装*/
+
+.arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow:after {
+    content: "";
+    width: 15rpx;
+    height: 15rpx;
+    border-top: 2rpx solid #ccc;
+    border-right: 2rpx solid #ccc;
+    transform: rotate(45deg);
+    display: block;
+}
+
+
+/*水平垂直居中封装*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*列表封装*/
+
+.cell {
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.cell-item {
+    border-bottom: 1rpx solid #DDDDDD;
+    padding: 30rpx 30rpx;
+}
+
+
+/*带背景色占位*/
+
+.divider {
+    height: 20rpx;
+    background-color: #f1f1f1
+}
+
+
+/* 单行超出宽度省略号显示 */
+
+.ell {
+    width: 272rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+
+/* 正在加载中 */
+
+.loading {
+    color: #888;
+    font-size: 16px;
+    line-height: 80rpx;
+    text-align: center;
+}
+
+
+/* .loading::after{
+  contain: "";
+  height: 40rpx;
+  width: 40rpx;
+  background: url(../assets/images/loading.gif) no-repeat
+} */

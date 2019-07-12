@@ -1,0 +1,59 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/category/category",
+        "pages/guide/guide",
+        "pages/mine/mine",
+        "pages/forum/forum",
+        "pages/list/list"
+    ],
+    "window": {
+        "backgroundTextStyle": "dark",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "某某旅行",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#2dbcfe",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "assets/images/bottomNav/home.png",
+                "selectedIconPath": "assets/images/bottomNav/home_select.png"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "text": "分类",
+                "iconPath": "assets/images/bottomNav/category.png",
+                "selectedIconPath": "assets/images/bottomNav/category_select.png"
+            },
+            {
+                "pagePath": "pages/guide/guide",
+                "text": "攻略",
+                "iconPath": "assets/images/bottomNav/guide.png",
+                "selectedIconPath": "assets/images/bottomNav/guide_select.png"
+            },
+            {
+                "pagePath": "pages/forum/forum",
+                "text": "论坛",
+                "iconPath": "assets/images/bottomNav/forum.png",
+                "selectedIconPath": "assets/images/bottomNav/forum_select.png"
+            },
+            {
+                "pagePath": "pages/mine/mine",
+                "text": "我的",
+                "iconPath": "assets/images/bottomNav/mine.png",
+                "selectedIconPath": "assets/images/bottomNav/mine_select.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+
+    "usingComponents": {
+        "van-button": "dist/button/index",
+        "van-cell": "dist/cell/index",
+        "van-cell-group": "dist/cell-group/index",
+        "van-search": "dist/search/index"
+    }
+}

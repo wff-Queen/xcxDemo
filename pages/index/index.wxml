@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<!-- <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval="{{interval}}" duration="{{duration}}" indicator-color="#f1f1f1" indicator-active-color="#f60" class='slider'>
+    <block wx:for="{{imgUrls}}" wx:key="item">
+        <swiper-item>
+            <image src='{{item.image}}' class='slide-image' width="355" height="150"></image>
+        </swiper-item>
+    </block>
+</swiper>url="/pages/category/category?cat={{item.id}}&title={{item.name}}"-->
+
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" bind:search="onSearch" />
+<swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval="{{interval}}" duration="{{duration}}" indicator-color="#f1f1f1" indicator-active-color="#f47190" class='slider'>
+    <block wx:for="{{imgUrls}}" wx:key="item">
+        <swiper-item bindtap='previewImageFn'>
+            <image src='{{item}}' class='slide-image' width="355" height="150"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<view class='index-nav row'>
+    <view wx:for="{{navData}}" wx:key="item" class='nav-item'>
+        <navigator url="../list/list?title={{item.icon}}">
+            <image src='{{item.icon}}'></image>
+            <text>{{item.text}}</text>
+        </navigator>
+    </view>
+</view>
+<view class="m-title-box" hover-class="none" hover-stop-propagation="false">
+    <text class="m-title" decode="{{true}}">&nbsp;&nbsp;自驾游&nbsp;&nbsp;</text>
+</view>
+<view class="list-box row-warp" hover-class="none" hover-stop-propagation="false">
+    <block wx:for="{{6}}" wx:key="item">
+        <view class="list">
+            <image class="" src="../../assets/images/banner1.jpg"></image>
+            <view class="list-info">
+                <text class="list-name">太尉滑雪自驾门票</text>
+                <text class="list-num">￥100.00 </text>
+            </view>
+        </view>
+    </block>
+</view>
