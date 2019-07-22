@@ -1,4 +1,4 @@
-// pages/category/category.js
+// pages/login/login.js
 Page({
 
   /**
@@ -7,7 +7,11 @@ Page({
   data: {
 
   },
-
+  wxlogin: function () { //获取用户的openID
+    wx.switchTab({
+      url: "/pages/index/index"
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

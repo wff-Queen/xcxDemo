@@ -1,0 +1,3 @@
+<!--pages/login/login.wxml-->
+
+<van-button type="default" bindtap='wxlogin'>登录</van-button>

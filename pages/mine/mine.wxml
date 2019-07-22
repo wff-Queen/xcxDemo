@@ -1,2 +1,10 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class="avatar center" style='flex-wrap:wrap'>
+    <!-- <image src='/assets/images/default.png'></image> -->
+    <image src='{{headeUrl}}'></image>
+    <text style='display:block;width:100%;text-align:center;color:#ffffff'>{{name}}</text>
+</view>
+<van-button type="info" open-type='getUserInfo' bindgetuserinfo="getAuthorize">获取用户信息</van-button>
+
+<van-button type="primary" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">手机号一键登录</van-button>
+<van-button type="default" bindtap='wxlogin'>登录</van-button>

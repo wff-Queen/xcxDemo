@@ -1,0 +1,37 @@
+<wxs module="isSelect">
+    function bar(arr_data,today) { if(arr_data.indexOf(today) >= 0){ return true; }else{ return false; } } module.exports = { bar:bar };
+</wxs>
+<!-- 日历年月 -->
+<view class='calendar_title flex_nowrap'>
+    <view class='icon left' bindtap='lastMonth'>
+        《《《
+        <!-- <image src='../../img/right.png' /> -->
+    </view>
+    <view>{{year}}年{{month}}月</view>
+    <view class='icon' bindtap='nextMonth'>
+        》》》
+        <!-- <image src='../../img/right.png' /> -->
+    </view>
+</view>
+
+<!-- 日历主体 -->
+<view class='calendar'>
+    <view class='header'>
+        <view wx:for='{{date}}' wx:key='' class='{{(index == todayIndex) && isTodayWeek ? "weekMark" : ""}}'>{{item}}
+            <view></view>
+        </view>
+    </view>
+
+    <view class='date-box'>
+        <block wx:for='{{dateArr}}' wx:key=''>
+            <view class='{{ isSelect.bar(arr,item.isToday)  ? "nowDay" : ""}}'>
+                <view wx:if='{{ isSelect.bar(arr,item.isToday) }}' class='date-head' bindtap='lookHuoDong' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
+                    <view>{{item.dateNum}}</view>
+                </view>
+                <view wx:else class='date-head' data-year='{{year}}' data-month='{{month}}' data-datenum='{{item.dateNum}}'>
+                    <view>{{item.dateNum}}</view>
+                </view>
+            </view>
+        </block>
+    </view>
+</view>

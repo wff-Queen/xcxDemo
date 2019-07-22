@@ -1,0 +1,26 @@
+/* pages/count/count.wxss */
+.count {
+  border: 1px solid #bbb;
+  width: 400rpx;
+  padding: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count view {
+  font-size: 36rpx;
+  height: 80rpx;
+  width: 80rpx;
+  border: 1px solid #dfdcdc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.del, .add {
+  background: #dfdcdc;
+}
+.count .num {
+  color: #f22
+}

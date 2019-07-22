@@ -1,2 +1,7 @@
-<!--pages/guide/guide.wxml-->
-<text>pages/guide/guide.wxml</text>
+<view style="margin: 20rpx 0;"> ------ 父组件 ------ </view> 
+<view>单价：{{price}}</view>
+<view>总价：{{price * num}}</view> 
+<view style="margin: 180rpx 0 30rpx;"> ------ 子组件 ------ </view> 
+
+<!-- 当自定义组件触发“changeCount”事件时，调用“onChangeCount”方法 -->
+<count num='{{num}}' bind:changeCount='onChangeCount'></count> 

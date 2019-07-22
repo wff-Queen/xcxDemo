@@ -1,0 +1,6 @@
+<!--pages/count/count.wxml-->
+<view class='count'>
+  <view class='del' bindtap='bindDel'> - </view>
+  <view class='num'> {{num}} </view>
+  <view class='add' bindtap='bindAdd'> + </view>
+</view> 

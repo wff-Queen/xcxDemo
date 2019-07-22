@@ -1,1 +1,17 @@
 /* pages/mine/mine.wxss */
+
+.avatar {
+    background-color: #f60;
+    height: 350rpx;
+}
+
+.avatar image {
+    width: 210rpx;
+    height: 210rpx;
+    border-radius: 50%;
+    border: 10rpx solid rgba(0, 0, 0, .2)
+}
+
+page {
+    background-color: #f1f1f1
+}

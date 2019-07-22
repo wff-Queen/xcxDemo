@@ -1,17 +1,22 @@
 {
     "pages": [
-        "pages/index/index",
-        "pages/category/category",
         "pages/guide/guide",
-        "pages/mine/mine",
-        "pages/forum/forum",
-        "pages/list/list"
+        "pages/calendar/category",
+        "pages/map/forum",
+        "pages/login/login",
+        "pages/index/index",
+        "pages/mine/mine"
     ],
     "window": {
         "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTitleText": "某某旅行",
         "navigationBarTextStyle": "black"
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "获取您的当前位置"
+        }
     },
     "tabBar": {
         "color": "#999",
@@ -23,20 +28,20 @@
                 "selectedIconPath": "assets/images/bottomNav/home_select.png"
             },
             {
-                "pagePath": "pages/category/category",
-                "text": "分类",
+                "pagePath": "pages/calendar/category",
+                "text": "日历",
                 "iconPath": "assets/images/bottomNav/category.png",
                 "selectedIconPath": "assets/images/bottomNav/category_select.png"
             },
             {
                 "pagePath": "pages/guide/guide",
-                "text": "攻略",
+                "text": "父子组件",
                 "iconPath": "assets/images/bottomNav/guide.png",
                 "selectedIconPath": "assets/images/bottomNav/guide_select.png"
             },
             {
-                "pagePath": "pages/forum/forum",
-                "text": "论坛",
+                "pagePath": "pages/map/forum",
+                "text": "地图",
                 "iconPath": "assets/images/bottomNav/forum.png",
                 "selectedIconPath": "assets/images/bottomNav/forum_select.png"
             },
