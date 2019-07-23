@@ -5,4 +5,4 @@
 
 <!-- 当自定义组件触发“changeCount”事件时，调用“onChangeCount”方法 -->
 <count num='{{num}}' bind:changeCount='onChangeCount'></count> 
-<text>当自定义组件触发“changeCount”事件时，调用“onChangeCount”方法</text>
+<text>当自定义组件触发“changeCount”事件时，调用“onChangeCount”方法111</text>
